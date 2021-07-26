@@ -1,5 +1,4 @@
-FROM 10.14.0-stretch
-
+FROM node:10.14.0
 RUN mkdir /usr/src/goof
 RUN mkdir /tmp/extracted_files
 COPY . /usr/src/goof
