@@ -30,6 +30,8 @@ jobs:
       # replace with your preferred image
       - image: cimg/base:stable
     steps:
+      - attach_workspace:
+          at: .
       - snyk/scan:
           additional-arguments: --all-projects 
           command: test 
