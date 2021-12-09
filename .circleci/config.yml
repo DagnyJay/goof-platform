@@ -33,7 +33,7 @@ jobs:
       - attach_workspace:
           at: .
       - snyk/scan:
-          additional-arguments: --all-projects 
+          additional-arguments: --file=SCA/JS/package.json
           command: test 
           install-alpine-dependencies: true 
           monitor-on-build: false 
