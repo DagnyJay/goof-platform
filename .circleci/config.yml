@@ -43,4 +43,7 @@ workflows:
   example-workflow:
     jobs:
       - setup
-      - example-job
+      - example-job:
+          requires:
+            - setup
+
