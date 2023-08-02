@@ -3,6 +3,8 @@
  * SPDX-License-Identifier: MIT
  */
 
+ /*goofy comment, I'm on a branch */
+
 const utils = require('../lib/utils')
 const challenges = require('../data/datacache').challenges
 const db = require('../data/mongodb')

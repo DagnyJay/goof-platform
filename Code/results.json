@@ -1,0 +1,17 @@
+no such file or directory: /Users/username/Documents/Repositories/snyk-goof-master
+Error: ENOENT: no such file or directory, lstat '/Users/username/Documents/Repositories/snyk-goof-master'
+    at Object.lstatSync (node:fs:1529:3)
+    at Object.lstatSync (pkg/prelude/bootstrap.js:1506:33)
+    at determineBaseDir (/snapshot/snyk/dist/cli/webpack:/snyk/node_modules/@snyk/code-client/dist/files.js:175:1)
+    at createBundleWithCustomFiles (/snapshot/snyk/dist/cli/webpack:/snyk/node_modules/@snyk/code-client/dist/bundles.js:189:1)
+    at createBundleFromFolders (/snapshot/snyk/dist/cli/webpack:/snyk/node_modules/@snyk/code-client/dist/bundles.js:175:1)
+    at Object.analyzeFolders (/snapshot/snyk/dist/cli/webpack:/snyk/node_modules/@snyk/code-client/dist/analysis.js:75:1)
+    at getCodeAnalysis (/snapshot/snyk/dist/cli/webpack:/snyk/src/lib/plugins/sast/analysis.ts:100:18)
+    at Object.getCodeTestResults (/snapshot/snyk/dist/cli/webpack:/snyk/src/lib/plugins/sast/analysis.ts:39:24)
+    at Object.test (/snapshot/snyk/dist/cli/webpack:/snyk/src/lib/plugins/sast/index.ts:38:27)
+    at Object.testEcosystem (/snapshot/snyk/dist/cli/webpack:/snyk/src/lib/ecosystems/test.ts:28:60)
+    at test (/snapshot/snyk/dist/cli/webpack:/snyk/src/cli/commands/test/index.ts:130:29)
+    at runCommand (/snapshot/snyk/dist/cli/webpack:/snyk/src/cli/main.ts:51:25)
+    at main (/snapshot/snyk/dist/cli/webpack:/snyk/src/cli/main.ts:299:11)
+    at /snapshot/snyk/dist/cli/webpack:/snyk/src/cli/index.ts:13:3
+    at Object.callHandlingUnexpectedErrors (/snapshot/snyk/dist/cli/webpack:/snyk/src/lib/unexpected-error.ts:28:5)

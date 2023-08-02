@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.24.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-CC-K8S-5:
+    - 'IaC/deployment.yaml > [DocId: 1] > input > spec > template > spec > containers[snyk-container-demo] > resources > limits > cpu':
+        reason: None Given
+        expires: 2022-04-29T14:28:16.515Z
+        created: 2022-03-30T14:28:16.518Z
+patch: {}
